@@ -1,8 +1,8 @@
 <template>
   <div>
-    <XButton>dddd</XButton>
     <div class="test_less">
-      <div>dddddddddd</div>
+      <h1>Hello World</h1>
+      
     </div>
   </div>
 </template>
