@@ -1,8 +1,12 @@
-<style scoped lang="less">
-
+<style scoped lang="scss">
+    .testscss{
+        h1{
+            color: dodgerblue;
+        }
+    }
 </style>
 <template>
- <div>
+ <div class="testscss">
      <h1>test page 2</h1>
      <input type="file" value="choose file">
  </div>

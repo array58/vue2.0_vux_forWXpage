@@ -1,22 +1,27 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import Test1 from "@/components/test.vue"
-import Test2 from "@/components/test2.vue"
+
 
 Vue.use(Router)
 import store from '../store/'
 let _Router = new Router({
   routes: [
     {
-      path: '/test1',
-      name: 'test1',
-      component: Test1
+      path: '/login',
+      name: 'login',
+      component: ()=>import("../views/login.vue")
     },
     {
-      path: '/test2',
-      name: 'test2',
-      component: Test2
+      path: '/mainPage',
+      name: 'mainPage',
+      component: ()=>import("../views/mainPage.vue"),
+      children:[
+        {
+          path:"/mainPage/banjiquan",
+          name:"banjiquan",
+          component:()=>import("../views/banjiquan.vue")
+        }
+      ]
     }
   ]
 })

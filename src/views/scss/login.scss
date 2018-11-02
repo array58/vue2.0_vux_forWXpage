@@ -1,0 +1,99 @@
+@import "./rem.scss";
+
+.login_wrapper{
+    background-image: url("../assets/pics/bg.png");//相对路径是相对使用位置的路径
+    background-size: 100% 100%;
+    background-repeat:no-repeat; 
+    // top: 0;
+    // left: 0;
+    .logo_wrapper{
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        img{
+            width: rem(300);
+        }
+        p{
+            font-size: 26px;
+            color: #1ABC8D;
+            position: relative;
+            top: 10px;
+        }
+    }
+    .form_wrapper{
+        position: relative;
+        top: 250px;
+        text-align: center;
+        font-size: 0;
+        .item_wrapper{
+            width: rem(638);
+            height: 50px;
+            background: #fff;
+            display: inline-block;
+            text-align: initial;
+            border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+            
+            >*{
+                display: inline-block;
+                height: 100%;
+                vertical-align: top;
+                border:none;
+                outline: none;
+                img{
+                    height: 26px;
+                    margin-left: 20px;
+                    margin-top: 12px;
+                }
+            }
+            input{
+                height: 50px;
+                margin-left: rem(28);
+                // width: rem(400);
+            }
+            .delete_wrapper{
+                position: absolute;
+                right: 0;
+                height: 100%;
+                width: 60px;
+
+            }
+        }
+        .with_top_gap{
+            margin-top: 30px;
+        }
+        .button{
+            background-color: #1ABC8D;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 10px;
+        }
+        .code{
+            width: rem(360);
+            input{
+                width: rem(200);
+            }
+        }
+        .code_button{
+            width: rem(248);
+            margin-left: rem(30);
+        }
+        .code_button_cancel{
+            background-color: #fff!important;
+            border: none!important;
+            color: grey!important;
+        }
+        .no_letter_spacing{
+            letter-spacing: 0;
+            background-color:#EBFFF9;
+            border: 1px solid #1ABC8D;
+            color: #1ABC8D; 
+            height: 48px;
+            font-size: 16px;
+        }
+    }
+}

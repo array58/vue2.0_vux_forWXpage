@@ -1,0 +1,36 @@
+@import "./rem.scss";
+
+    .heagerBgWrapper{
+        position: relative;
+        font-size: 0;
+        img{
+            width: 100%;
+        }
+        .sendMsg{
+            position: absolute;
+            bottom: 10px;
+            right: 12px;
+            font-size: 0;
+            text-align: center;
+            img{
+                width: rem(60)
+            }
+            span{
+                color: #fff;
+                font-size: 12px;
+                margin-top: 4px;
+                display: inline-block;
+            }
+        }
+    }
+    .tabListWrapper{
+        .weui-tabbar{
+            position: relative;
+            padding: 10px 0;
+           
+        }
+    }
+    .commentsWrapper{
+        overflow-y: auto;
+    }
+
